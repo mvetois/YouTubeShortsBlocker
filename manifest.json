@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "__MSG_appName__",
+    "version": "1.0",
+    "description": "__MSG_appDesc__",
+    "default_locale": "en",
+    "content_scripts": [
+        {
+            "matches": ["*://www.youtube.com/*"],
+            "js": ["service.js"],
+            "run_at": "document_idle"
+        }
+    ],
+    "icons": {
+        "1024": "images/icon.png"
+    },
+    "host_permissions": ["*://www.youtube.com/*"],
+    "permissions": ["scripting", "storage", "tabs"],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup/popup.html",
+        "default_icon": "images/icon.png"
+    }
+}

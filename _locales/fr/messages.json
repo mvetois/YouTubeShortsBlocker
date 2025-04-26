@@ -1,0 +1,15 @@
+{
+    "appName": {
+        "message": "Bloqueur de Shorts"
+    },
+    "appDesc": {
+        "message": "Supprime les Shorts de YouTube."
+    },
+    "toggle_on": {
+        "message": "Désactiver le bloqueur"
+    },
+    "toggle_off": {
+        "message": "Activer le bloqueur"
+    }
+  }
+  
